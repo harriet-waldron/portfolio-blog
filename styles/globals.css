@@ -17,6 +17,17 @@
   }
 }
 
+@layer utilities {
+  .token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  @apply text-purple;
+}
+}
+
 /* Post styles */
 
 .prose .anchor {
@@ -98,7 +109,7 @@
 .token.char,
 .token.builtin,
 .token.inserted {
-  @apply text-purple-500;
+  @apply text-purple;
 }
 
 .token.operator,

@@ -13,7 +13,7 @@ import rehypeCodeTitles from 'rehype-code-titles';
 import rehypePrism from 'rehype-prism-plus';
 import rehypeSlug from 'rehype-slug';
 import remarkGfm from 'remark-gfm';
-import Layout, { WEBSITE_HOST_URL } from '../../components/Layout';
+import Layout from '../../components/Layout';
 import { MetaProps } from '../../types/layout';
 import { PostType } from '../../types/post';
 import { postFilePaths, POSTS_PATH } from '../../utils/mdxUtils';
@@ -35,9 +35,9 @@ type PostPageProps = {
 
 const PostPage = ({ source, frontMatter }: PostPageProps): JSX.Element => {
   const customMeta: MetaProps = {
-    title: `${frontMatter.title} - Hunter Chang`,
+    title: `${frontMatter.title} - Harriet Waldron`,
     description: frontMatter.description,
-    image: `${WEBSITE_HOST_URL}${frontMatter.image}`,
+    // image: `${WEBSITE_HOST_URL}${frontMatter.image}`,
     date: frontMatter.date,
     type: 'article',
   };

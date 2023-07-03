@@ -1,10 +1,28 @@
 const { spacing } = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+  ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        white: '#ffffff',
+        antiquewhite: '#ffeedd',
+        beige: '#e4b696',
+        lightbeige: '#f7dbc6',
+        blackbean: '#301014',
+        desertsand: '#d8bfaa',
+        caputmortuum: '#51291e',
+        tan: '#d1bda0',
+        purple: '#3f3cbb',
+        indigodye: '#0b4f6c',
+        skyblue: '#57c4e5',
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {
@@ -26,6 +44,7 @@ module.exports = {
         },
         dark: {
           css: {
+            backgroundColor: theme('colors.midnight.300'),
             color: theme('colors.gray.300'),
             a: {
               color: theme('colors.blue.400'),

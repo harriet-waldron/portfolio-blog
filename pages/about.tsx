@@ -5,7 +5,7 @@ export const About = (): JSX.Element => {
   return (
     <Layout
       customMeta={{
-        title: 'About - Hunter Chang',
+        title: 'About - Harriet Waldron',
       }}
     >
       <h1>About Page</h1>
